@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Mukta, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: #DCDCDC;
+}
+
+/* ============================= NAVIGATION MENU TOPO */
+.nav {
+	background-color: #000000;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* redes sociais */
+.nav-sociais {
+	display: flex;
+}
+
+.nav-sociais a {
+	padding: 14px 20px;
+	color: #FFFFFF;
+}
+
+.nav-sociais a:hover {
+	background-color: #BEBEBE;
+}
+
+/* botton search */
+.btn-search {
+	padding: 15px 30px;
+	color: #FFFFFF;
+}
+
+.btn-search:hover {
+	background-color: #BEBEBE;
+}
+
+@media (max-width: 500px) {
+	.nav {
+		display: none;
+	}
+} 
+
+/* ============================== HEADER */
+.header {
+	background-image: url("../images/header.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 60%;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.header h1 {
+	font-size: 6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.header h2 {
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+@media (max-width: 700px) {
+	.header h1 {
+		font-size: 3rem;
+	}
+	.header h2 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+} 
+/* =============================== MAIN */
+main {
+	width: 90%;
+	max-width: 900px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-main {
+	width: 65%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+/* posts principais */
+.post-main {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/* header dos posts */
+.post-header {
+	margin: 20px;
+}
+.post-header h3 {
+	font-size: 2rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-bottom: 1px;
+}
+.post-header h4 {
+	font-weight: 300;
+}
+
+/* imagens dos posts */
+.post-main img {
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	main {
+		flex-direction: column;
+	}
+
+	.container-main {
+		width: 100%;
+	}
+
+} 
+
+/* ================================ ASIDE */
+aside {
+	width: 32%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.aside-main {
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+/* titulo dos asides */
+.aside-title h5 {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	background-color: #000000;
+	padding: 25px 15px;
+	color: #FFFFFF;
+}
+
+/* aside sociais */
+.aside-sociais {
+	margin: 10px 0;
+	text-align: center;
+}
+.aside-sociais a {
+	margin: 5px;
+	color: #000000;
+}
+
+/* inscreva-se */
+.aside-subscribe {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.aside-subscribe form {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.aside-subscribe form input {
+	width: 90%;
+	height: 40px;
+}
+
+.aside-subscribe form button {
+	width: 90%;
+	height: 40px;
+	margin: 5px 0;
+	border: none;
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	background-color: #6495ED;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.aside-subscribe form button:hover {
+	background-color: #000000;
+}
+
+@media (max-width: 700px) {
+	aside {
+		width: 100%;
+		flex-direction: column;
+	}
+	.container-main {
+		width: 100%;
+	}
+
+} 
+
+/* ============================= FOOTER */
+.footer {
+	min-height: 100px;
+	height: 30vh;
+	background-color: #BEBEBE;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer button {
+	background-color: #6495ED;
+	margin-left: 60px;
+	align-self: center;
+	color: #FFFFFF;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+}
+
+.footer button a {
+	color: #FFFFFF;
+}
+
+.footer small {
+	margin: 60px 60px 0 0;
+	align-self: center;
+}
+
+
+@media (max-width: 700px) {
+	.footer {
+		flex-direction: column;
+	}
+	.footer button {
+		margin: 20px 20px;
+	}
+	.footer small {
+		margin: 20px 20px;
+	}
+
+} 
+
+/* OUTROS */
+p {
+	line-height: 1.5rem;
+	text-align: justify;
+	margin: 10px;
+}
+
